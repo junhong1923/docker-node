@@ -4,7 +4,7 @@ This Dockerfile can create a basic Node.js environment image.
 ## Pull Docker Image
 Pull docker image from dockerhub.  
 ```
-$ docker pull twj666/node-helloworld
+$ docker pull twj666/node-helloworld:runtime-bash
 ```
 
 ## Build Image

@@ -23,3 +23,6 @@ $ docker run -it --rm -p 3001:3000 --name [ContainerName] [Image Id]
 2. $ sudo amazon-linux-extras install docker
 3. $ sudo service docker start
 4. $ sudo usermod -a -G docker ec2-user
+
+#### reference
+https://docs.aws.amazon.com/zh_tw/AmazonECS/latest/developerguide/docker-basics.html

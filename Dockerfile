@@ -12,7 +12,7 @@ RUN npm install && \
 COPY . .
 
 EXPOSE 3000
-CMD ["node", "app.js"]
+# CMD ["node", "app.js"]
 
 # build image: docker build . -t junhong/node-web-app:0.0.1-dev
 # run container: docker run -it --rm -p 3333:3000 --name myNode 3569a9136f62 bash

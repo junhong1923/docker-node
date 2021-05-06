@@ -4,7 +4,7 @@ This Dockerfile can create a basic Node.js environment image.
 ## Pull Docker Image
 Pull docker image from dockerhub.  
 ```
-$ docker push twj666/node-helloworld:tagname
+$ docker pull twj666/node-helloworld
 ```
 
 ## Build Image
@@ -14,8 +14,9 @@ $ docker build . -t [ImageName]:[Tag]
 
 ## Run Container
 ```
-$ docker run -it --rm -p 3001:3000 --name [ContainerName] [Image Id]
+$ docker run -it --rm -p 3000:3000 --name [ContainerName] [Image Id] bash
 ```
+Since this Dockerfile doesn't use "CMD ["node", "app.js"]", we need to use bash as runtime to enter this container.
 
 #### parameters
 1. --rm : remove the container automatically
